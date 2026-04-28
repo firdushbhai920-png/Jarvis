@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JARVIS BOSS EDITION</title>
+    <style>
+        body { background: #000; color: #00d2ff; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; margin: 0; font-family: sans-serif; overflow: hidden; }
+        .arc-reactor { position: relative; width: 250px; height: 250px; display: flex; align-items: center; justify-content: center; cursor: pointer; }
+        .ring { position: absolute; border: 4px solid transparent; border-radius: 50%; border-top: 4px solid #00d2ff; animation: spin 2s linear infinite; }
+        .r1 { width: 100%; height: 100%; border-top-color: #00d2ff; animation-duration: 3s; }
+        .r2 { width: 80%; height: 80%; border-bottom-color: #00d2ff; animation-duration: 2s; animation-direction: reverse; }
+        .r3 { width: 60%; height: 60%; border-left-color: #00d2ff; animation-duration: 1s; }
+        .core { width: 50px; height: 50px; background: #fff; border-radius: 50%; box-shadow: 0 0 40px #00d2ff; }
+        #st { margin-top: 40px; font-size: 18px; text-align: center; text-shadow: 0 0 10px #00d2ff; }
+    </style>
+</head>
+<body>
+    <div style="font-size: 24px; margin-bottom: 20px; letter-spacing: 3px;">JARVIS: फ़िदुस भाई</div>
+    <div class="arc-reactor" onclick="powerUp()">
+        <div class="ring r1"></div>
+        <div class="ring r2"></div>
+        <div class="ring r3"></div>
+        <div class="core"></div>
+    </div>
+    <div id="st">सिस्टम ऑफलाइन <br> शुरू करने के लिए टच करें</div>
+    <script src="script.js"></script>
+</body>
+</html>
